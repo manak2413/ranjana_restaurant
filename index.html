@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ranjana_family_restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="./image/logo-image.jpg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <div class="logo">
+            <img class="logo-image"
+                src="./image/logo-image.jpg"
+                alt="">
+            <span>
+                <span class="brand">ranjana_family</span>
+                <span class="sub">RESTAURANT</span>
+            </span>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#reservation" class="btn btn-primary book-btn-desktop">Book a Table</a>
+
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+</header>
+
+<section class="hero" id="home">
+    <img class="hero-bg"
+        src="https://static.vecteezy.com/system/resources/thumbnails/054/611/336/small/wide-angle-foodgraphy-for-restaurant-with-copy-space-photo.jpg"
+        alt="restaurant ambience">
+
+    <div class="container hero-inner">
+        <span class="eyebrow">Good Food, Good Mood</span>
+
+        <h1>Delicious Food,<br>Happy You<span>.</span></h1>
+
+        <p>Experience the perfect blend of taste, ambience and hospitality.</p>
+
+        <div class="hero-btns">
+            <a href="#menu" class="btn btn-primary">Explore Menu</a>
+            <a href="#reservation" class="btn btn-outline">Book a Table</a>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container grid">
+
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=900&auto=format&fit=crop"
+                alt="restaurant interior">
+        </div>
+
+        <div>
+            <span class="eyebrow">About Us</span>
+
+            <h2>Crafting Moments,<br>Serving Happiness</h2>
+
+            <p class="desc">
+                At Flavoro, we believe good food brings people together.
+                Our chefs use the freshest ingredients to create dishes
+                that are rich in taste and made with love.
+            </p>
+
+            <div class="feature-row">
+
+                <div class="feature">
+                    <div class="icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4>Fresh Ingredients</h4>
+                    <p>Always quality you can trust</p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h4>Expert Chefs</h4>
+                    <p>Passionate about food</p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h4>Warm Ambience</h4>
+                    <p>Comfortable & welcoming</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu-section" id="menu">
+
+    <div class="container">
+
+        <span class="eyebrow">Our Menu</span>
+
+        <h2>Popular Dishes</h2>
+
+        <div class="dish-grid" id="dishGrid">
+
+            <div class="dish-card">
+                <div class="img-wrap">
+                    <img src="./image/pasta.jpg" alt="Creamy Pasta">
+                </div>
+
+                <div class="dish-info">
+                    <h4>Creamy Pasta</h4>
+                    <p>Rich & Creamy Alfredo</p>
+                    <span class="price">₹299</span>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-wrap">
+                    <img src="./image/Burger.jpg" alt="Classic Burger">
+                </div>
+
+                <div class="dish-info">
+                    <h4>Classic Burger</h4>
+                    <p>Cheesy & Delicious</p>
+                    <span class="price">₹249</span>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-wrap">
+                    <img src="./image/pizza.jpg" alt="Margherita Pizza">
+                </div>
+
+                <div class="dish-info">
+                    <h4>Margherita Pizza</h4>
+                    <p>Fresh & Cheesy</p>
+                    <span class="price">₹349</span>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-wrap">
+                    <img src="./image/Cake.jpg" alt="Choco Lava Cake">
+                </div>
+
+                <div class="dish-info">
+                    <h4>Choco Lava Cake</h4>
+                    <p>Warm & Gooey</p>
+                    <span class="price">₹199</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dish-grid extra-dishes" id="extraDishes">
+
+            <div class="dish-card">
+                <div class="img-wrap">
+                    <img src="./image/Paneer Tikka.jpg" alt="Paneer Tikka">
+                </div>
+
+                <div class="dish-info">
+                    <h4>Paneer Tikka</h4>
+                    <p>Smoky & Spiced</p>
+                    <span class="price">₹229</span>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-wrap">
+                    <img src="./image/Dal Makhani.jpg" alt="Dal Makhani">
+                </div>
+
+                <div class="dish-info">
+                    <h4>Dal Makhani</h4>
+                    <p>Slow Cooked & Buttery</p>
+                    <span class="price">₹219</span>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-wrap">
+                    <img src="./image/Veg Biryani.jpg" alt="Veg Biryani">
+                </div>
+
+                <div class="dish-info">
+                    <h4>Veg Biryani</h4>
+                    <p>Aromatic & Flavourful</p>
+                    <span class="price">₹249</span>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <div class="img-wrap">
+                    <img src="./image/Cold Coffee.jpg" alt="Cold Coffee">
+                </div>
+
+                <div class="dish-info">
+                    <h4>Cold Coffee</h4>
+                    <p>Chilled & Creamy</p>
+                    <span class="price">₹129</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menu-cta">
+            <button type="button"
+                id="menuToggleBtn"
+                class="btn btn-primary"
+                onclick="toggleFullMenu()">
+                View Full Menu
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+
+    <div class="container">
+
+        <h2>Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <div class="g-item">
+                <img src="./image/cold coffee.jpg" alt="gallery photo 1">
+            </div>
+
+            <div class="g-item">
+                <img src="./image/pasta.jpg" alt="gallery photo 2">
+            </div>
+
+            <div class="g-item">
+                <img src="./image/pizza.jpg" alt="gallery photo 3">
+            </div>
+
+            <div class="g-item">
+                <img src="./image/Paneer Tikka.jpg" alt="gallery photo 4">
+            </div>
+
+            <div class="g-item">
+                <img src="./image/Dal Makhani.jpg" alt="gallery photo 5">
+            </div>
+
+            <div class="g-item">
+                <img src="./image/Cake.jpg" alt="gallery photo 6">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="reservation" id="reservation">
+
+    <div class="container res-grid">
+
+        <div>
+            <span class="eyebrow">Book a Table</span>
+
+            <h2>Reservation</h2>
+
+            <ul class="res-points">
+                <li>
+                    <span class="ic">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    Choose Date & Time
+                </li>
+
+                <li>
+                    <span class="ic">
+                        <i class="fa-solid fa-users"></i>
+                    </span>
+                    Tell us how many
+                </li>
+
+                <li>
+                    <span class="ic">
+                        <i class="fa-solid fa-utensils"></i>
+                    </span>
+                    Enjoy your meal
+                </li>
+            </ul>
+        </div>
+
+        <form class="res-form" id="reservationForm">
+
+            <div class="form-row">
+
+                <div class="field">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="field">
+                    <i class="fa-solid fa-clock"></i>
+                    <input type="time" id="time" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="field">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+
+            </div>
+
+            <div class="field field-full" style="margin-bottom:16px;">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required>
+
+            </div>
+
+            <div class="form-actions">
+
+                <div class="field">
+
+                    <i class="fa-solid fa-user-group"></i>
+
+                    <select id="guests" required>
+                        <option>Number of Guests</option>
+                        <option>1-2 Guests</option>
+                        <option>3-4 Guests</option>
+                        <option>5+ Guests</option>
+                    </select>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Book Now
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+
+    <div class="container">
+
+        <h2>What Our Guests Say</h2>
+
+        <div class="underline"></div>
+
+        <div class="t-grid">
+
+            <div class="t-card">
+
+                <div class="quote">&ldquo;</div>
+
+                <p>
+                    Amazing food and great ambience.
+                    The best place for family dinners!
+                </p>
+
+                <div class="t-person">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHimzVg7WJ7GEaEdytzyhM3REsWWRw22P48M5K3gqXxTgJQASp75nPd4k&s=10"
+                        alt="Priya Sharma">
+
+                    <div>
+                        <h5>Priya Sharma</h5>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="t-card">
+
+                <div class="quote">&ldquo;</div>
+
+                <p>
+                    The pasta and service were fantastic.
+                    Highly recommended for everyone!
+                </p>
+
+                <div class="t-person">
+
+                    <img src="./image/rahul.jpg"
+                        alt="Rahul Verma">
+
+                    <div>
+                        <h5>Rahul Verma</h5>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="t-card">
+
+                <div class="quote">&ldquo;</div>
+
+                <p>
+                    Cozy place with delicious food.
+                    Will definitely visit again!
+                </p>
+
+                <div class="t-person">
+
+                    <img src="./image/amit vrma.jpg"
+                        alt="Amit Mehta">
+
+                    <div>
+                        <h5>Anjali Mehta</h5>
+                        <div class="stars">★★★★★</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+
+    <div class="container contact-grid">
+
+        <div>
+
+            <span class="eyebrow">Get in Touch</span>
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-item">
+                <span class="ic">
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                123, Food parbatsar, India
+            </div>
+
+            <div class="contact-item">
+                <span class="ic">
+                    <i class="fa-solid fa-phone"></i>
+                </span>
+                +91 9950893931
+            </div>
+
+            <div class="contact-item">
+                <span class="ic">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+                manak@2413gmail.com
+            </div>
+
+            <div class="contact-item">
+                <span class="ic">
+                    <i class="fa-solid fa-clock"></i>
+                </span>
+                Mon - Sun : 11:00 AM - 11:00 PM
+            </div>
+
+        </div>
+
+        <div class="map-wrap">
+
+            <iframe
+                src="https://maps.google.com/maps?q=Ranjana+family+restaurant+parbatsar,India&z=14&output=embed"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <div class="logo">
+
+                    <img class="logo-image"
+                        src="./image/logo-image.jpg"
+                        alt="">
+
+                    <span>
+                        <span class="brand" style="color:#fff;">
+                            ranjana_family
+                        </span>
+
+                        <span class="sub">
+                            RESTAURANT
+                        </span>
+                    </span>
+
+                </div>
+
+                <p class="f-desc">
+                    Good food, good mood.<br>
+                    Visit us and enjoy an unforgettable experience.
+                </p>
+
+                <div class="socials">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/ranjana_family_restaurant/reels/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h5>Quick Links</h5>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h5>Support</h5>
+
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+
+            </div>
+
+            <div class="newsletter">
+
+                <h5>Newsletter</h5>
+
+                <p>Subscribe for updates and offers</p>
+
+                <form class="news-input"
+                    onsubmit="event.preventDefault(); alert('Subscribed!');">
+
+                    <input type="email"
+                        placeholder="Enter your email"
+                        required>
+
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            🙏🏻ranjana_family_restaurant. All rights reserved.
+        </div>
+
+    </div>
+</footer>
+
+<!-- WhatsApp floating icon -->
+<a href="https://wa.me/919950893931"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="Chat on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<script>
+
+    // Full Menu Toggle
+
+    function toggleFullMenu() {
+
+        const extra = document.getElementById('extraDishes');
+        const btn = document.getElementById('menuToggleBtn');
+
+        const isOpen = extra.classList.contains('open');
+
+        if (!isOpen) {
+
+            extra.classList.add('open');
+
+            btn.textContent = 'Show Less';
+
+            extra.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+
+        } else {
+
+            extra.classList.remove('open');
+
+            btn.textContent = 'View Full Menu';
+
+        }
+    }
+
+
+    // Mobile Hamburger Menu
+
+    const menuToggle = document.getElementById('menuToggle');
+
+    const navLinks = document.getElementById('navLinks');
+
+    const navOverlay = document.getElementById('navOverlay');
+
+
+    function openMenu() {
+
+        navLinks.classList.add('open');
+
+        navOverlay.classList.add('open');
+
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-xmark"></i>';
+
+    }
+
+
+    function closeMenu() {
+
+        navLinks.classList.remove('open');
+
+        navOverlay.classList.remove('open');
+
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-bars"></i>';
+
+    }
+
+
+    menuToggle.addEventListener('click', () => {
+
+        if (navLinks.classList.contains('open')) {
+
+            closeMenu();
+
+        } else {
+
+            openMenu();
+
+        }
+
+    });
+
+
+    navOverlay.addEventListener('click', closeMenu);
+
+
+    navLinks.querySelectorAll('a').forEach(link => {
+
+        link.addEventListener('click', closeMenu);
+
+    });
+
+
+    // Reservation Form
+    // MongoDB / API connection removed.
+    // Form is now only handled on the frontend.
+
+    const reservationForm =
+        document.getElementById("reservationForm");
+
+    reservationForm.addEventListener("submit", (e) => {
+
+        e.preventDefault();
+
+        alert("Thank you! Your table request has been submitted.");
+
+        reservationForm.reset();
+
+    });
+
+</script>
+
+
+</body>
+
+</html>
