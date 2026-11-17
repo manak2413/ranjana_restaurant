@@ -26,7 +26,7 @@ const galleryData = {
             },
 
             {
-                image: "./image/Pasta.jpg",
+                image: "./image/pizza.jpg",
                 title: "Creamy Pasta"
             },
 
